@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio</title>
+   <script>
+    if (window.location.hash) {
+      history.replaceState(null, null, window.location.pathname);
+    }
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<style>
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+  display: inline-flex;
+}
+</style>
+
+<style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+
+<body class="font-poppins bg-white text-gray-900">
+
+
+  <nav class="fixed top-0 left-0 w-full flex justify-between items-center px-6 z-50 py-4 border-b shadow-sm bg-red-100">
+    <img src="img/profile.jpg" alt="Profile" class="w-10 h-10 rounded-full object-cover" />
+    <ul class="flex gap-4 text-sm font-medium flex justify-end space-x-6 mr-8">
+      <li><a href="#home" class="hover:text-indigo-800 text-white">Home</a></li>
+      <li><a href="#about-me" class="hover:text-indigo-800 text-white">About Me</a></li>
+      <li><a href="#contact" class="hover:text-indigo-800 text-white">Contact</a></li>
+      <li><a href="#message" class="hover:text-indigo-800 text-white">Message Us</a></li>
+    </ul>
+  </nav>
+
+  
+
+  <header class="scroll-mt-32 pt-7 text-center py-10 shadow bg-cover bg-center bg-no-repeat h-screen text-white"
+      style="background-image: url('img/bghome3.jpg');" >
+
+    <div class="flex flex-col items-center justify-center text-center min-h-screen px-4" id="home">
+    <h1 class="text-5xl font-bold text-indigo-800 mb-2">Hai, Selamat Datang <br> di Website Portofolioku!</h1>
+    <p class="text-pink-600 text-xl font-reguler">Temukan kecocokan denganku, skill yang aku miliki, dan perjalanan belajarku <br> di dunia pengembangan web & aplikasi di halaman ini ^_^</p>
+
+    
+<div class="p-6">
+    <a href="#about-me">
+       <button class="bg-pink-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-800 transition">
+        Click Here!
+      </button>
+    </a>
+  </div>
+    </header>
+
+   
+<div class="bg-indigo-800 py-2 overflow-hidden whitespace-nowrap">
+  
+  <div class="flex animate-marquee">
+    
+    <div class="flex space-x-6 px-4 font-semibold text-sm text-white uppercase tracking-wider">
+      <span>About Me</span>
+      <span>About Me</span>
+      <span>About Me</span>
+      <span>About Me</span>
+      <span>About Me</span>
+      <span>About Me</span>
+      <span>About Me</span>
+    </div>
+    <div class="flex space-x-6 px-4 font-semibold text-sm text-white uppercase tracking-wider">
+      <span>About Me</span>
+      <span>About Me</span>
+      <span>About Me</span>
+      <span>About Me</span>
+      <span>About Me</span>
+      <span>About Me</span>
+      <span>About Me</span>
+    </div>
+  </div>
+</div>
+
+
+   <section class="scroll-mt-32 pt-32 flex flex-col md:flex-row items-center justify-center p-10 gap-10" id="about-me"
+   style="background-image: url('img/bgabout.jpg');" >
+        <img src="img/about.png" alt="Profile" class=" w-80 h-80 object-cover" />
+        <div class="max-w-xl">
+            <h2 class="text-5xl text-blue-900 font-bold mb-2">¡Hola!</h2>
+          <hr class="border-t-2 justify-center border-gray-200 w-full mb-8 mx-auto my-4">
+            <p class="text-base mb-2">Aku Africhatul Qulubiyah, salah satu murid SMK Negeri 1 Bangil jurusan Pengembangan Perangkat Lunak dan Gim yang senang mencoba tantangan baru dan terus belajar untuk memasuki dunia kerja profesional.</p>
+            <p class="text-base">Tujuan aku adalah Menjadi seorang developer yang mampu menciptakan solusi digital yang bermanfaat dengan desain yang fungsional dan kode yang efisien. Saya ingin terus berkembang melalui pengalaman nyata dan berkontribusi dalam proyek-proyek profesional di industri teknologi.</p>
+        </div>
+    </section>
+
+
+  
+  <section class="py-12 px-6 text-center border-b"  style="background-image: url('img/bgabout.jpg');" >
+   <h2 class="text-4xl text-blue-900 font-bold mb-2">My Skill</h2>
+
+    <hr class="border-t-2 justify-center border-gray-200 w-40 mb-8 mx-auto my-4">
+   
+  
+  <div class="flex flex-wrap justify-center gap-10 mt-6">
+    
+    
+    <div class="flex flex-col items-center">
+      <img src="img/html.png" alt="Jakarta" class="w-24 h-24 object-cover rounded-full mb-2 shadow-md">
+      <p class="text-lg font-medium text-black">HTML</p>
+    </div>
+
+    <div class="flex flex-col items-center">
+      <img src="img/Figma.png" alt="Bandung" class="w-24 h-24 object-cover rounded-full mb-2 shadow-md">
+      <p class="text-lg font-medium text-black">Figma</p>
+    </div>
+
+    <div class="flex flex-col items-center">
+      <img src="img/Canva.png" alt="Surabaya" class="w-24 h-24 object-cover rounded-full mb-2 shadow-md">
+      <p class="text-lg font-medium text-black">Canva</p>
+    </div>
+  </section>
+
+  <section class="py-12 px-6 text-center border-b"  style="background-image: url('img/bgabout.jpg');" id="contact">
+  <div class="h-100 px-6 py-12">
+  <h2 class="text-4xl text-blue-900 font-bold mb-2">Contact</h2>
+ <hr class="border-t-2 justify-center border-gray-200 w-40 mb-8 mx-auto my-4">
+    <p class="text-center text-black mb-12">Hubungi aku pertanyaan lebih lanjut!</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+      <div class="border border-indigo-800 p-6 rounded-md text-center hover:bg-indigo-800 transition">
+        <div class="text-4xl mb-4">
+         <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail Icon" class="w-12 mx-auto mb-4">
+        </div>
+        <p class="font-bold text-gray-400">G-MAIL</p>
+        <p class="text-sm mt-1">africhatulqulubiyah@gmail.com</p>
+      </div>
+
+      
+      <div class="border border-indigo-800 p-6 rounded-md text-center hover:bg-indigo-800 transition">
+        <div class="text-4xl mb-4">
+                <img src="https://cdn-icons-png.flaticon.com/512/455/455705.png" alt="Phone Icon" class="w-12 mx-auto mb-4">
+        </div>
+        <p class="font-bold text-gray-400">TELEFON</p>
+        <p class="text-sm mt-1">+6283807634812</p>
+      </div>
+
+      
+      <div class="border border-indigo-800 p-6 rounded-md text-center hover:bg-indigo-800 transition">
+        <div class="text-4xl mb-4">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub Icon" class="w-12 mx-auto mb-4">
+        </div>
+        <p class="font-bold text-gray-400">GitHub</p>
+        <p class="text-sm mt-1">
+          Afrcha02
+        </p>
+      </div>
+
+      
+      <div class="border border-indigo-800 p-6 rounded-md text-center hover:bg-indigo-800 transition">
+        <div class="text-4xl mb-4">
+         <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram Icon" class="w-12 mx-auto mb-4">
+        </div>
+        <p class="font-bold text-gray-400">INSTAGRAM</p>
+        <p class="text-sm mt-1">@afriichaqulubiyah</p>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  
+ <section class="scroll-mt-60 pt-32 py-12 px-6 border-b"  style="background-image: url('img/bgabout.jpg');" id="massage">
+    <h2 class="text-4xl text-blue-900 font-bold mb-2">Massage Us</h2>
+
+    <hr class="border-t-2 border-gray-200 w-60 mb-8  my-4">
+    <div class="flex flex-col lg:flex-row gap-6">
+      <form id="contactForm" class="w-full lg:w-1/2 space-y-4">
+        <div>
+          <label for="name" class="block text-sm font-medium">Nama</label>
+          <input type="text" id="name" class="w-full border px-3 py-2 rounded" required />
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium">Email</label>
+          <input type="email" id="email" class="w-full border px-3 py-2 rounded" required />
+        </div>
+        <div>
+          <label for="phone" class="block text-sm font-medium">No. Telepon</label>
+          <input type="tel" id="phone" class="w-full border px-3 py-2 rounded" required />
+        </div>
+        <div>
+          <label for="message" class="block text-sm font-medium">Pesan</label>
+          <textarea id="message" class="w-full border px-3 py-2 rounded" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Submit</button>
+      </form>
+
+     
+      <div class="w-full lg:w-1/2 border p-4" id="formOutput">
+        <p class="text-sm text-gray-500">Output akan muncul di sini setelah form disubmit.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <script src="js/script.js"></script>
+</body>
+</html>
